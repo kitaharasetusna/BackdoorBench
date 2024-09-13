@@ -31,6 +31,9 @@ import numpy as np
 import torch
 import logging
 
+import sys
+sys.path.append("../")
+
 from utils.backdoor_generate_poison_index import generate_poison_index_from_label_transform
 from utils.aggregate_block.bd_attack_generate import bd_attack_img_trans_generate, bd_attack_label_trans_generate
 from copy import deepcopy
